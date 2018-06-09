@@ -21,6 +21,18 @@ class HumanReadableTimeTDDKataTests: XCTestCase {
         super.tearDown()
     }
     
+    func testSeconds() {
+        // Arrange
+        let vc = ViewController()
+        let input = 30
+        
+        // Act
+        let ret = vc.humanReadableTime(input)
+        
+        // Assert
+        XCTAssertEqual("30", ret)
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
