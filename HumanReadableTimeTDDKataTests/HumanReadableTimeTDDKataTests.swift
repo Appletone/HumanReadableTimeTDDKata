@@ -21,6 +21,18 @@ class HumanReadableTimeTDDKataTests: XCTestCase {
         super.tearDown()
     }
     
+    func testMinutes() {
+        // Arrange
+        let vc = ViewController()
+        let input = 61
+        
+        // Act
+        let ret = vc.humanReadableTime(input: input)
+        
+        // Assert
+        XCTAssertEqual("01:01", ret)
+    }
+    
     func testSeconds() {
         // Arrange
         let vc = ViewController()
