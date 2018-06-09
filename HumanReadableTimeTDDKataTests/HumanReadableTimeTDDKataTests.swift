@@ -27,7 +27,7 @@ class HumanReadableTimeTDDKataTests: XCTestCase {
         let input = 30
         
         // Act
-        let ret = vc.humanReadableTime(input)
+        let ret = vc.humanReadableTime(input: input)
         
         // Assert
         XCTAssertEqual("30", ret)
