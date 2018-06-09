@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     func humanReadableTime(input:Int) -> String {
-        return "\(String(format: "%02d", input % 60))"
+        return "\(String(format: "%02d", (input - 60) % 60)):\(String(format: "%02d", input % 60))"
     }
 
 }
