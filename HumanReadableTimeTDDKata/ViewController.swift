@@ -27,9 +27,13 @@ class ViewController: UIViewController {
 }
 
 extension Int {
+    
     func toHumanReadableTime(reabableTime:String = "") -> String {
+        let timeUnits = [60, 60, 999] // sec, min, hour
+        let subSqrt   = reabableTime.filter { $0 == ":" }.count
+        
         let dividend = self
-        let divisor  = 60
+        let divisor  = timeUnits[subSqrt]
         let newQuotient = dividend / divisor
         let remainder = dividend % divisor
         let newReabableTime = String(format: "%02d", remainder) + ":" +  reabableTime
