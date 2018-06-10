@@ -21,8 +21,25 @@ class ViewController: UIViewController {
     }
 
     func humanReadableTime(input:Int) -> String {
-        return "\(String(format: "%02d", (input - 60) % 60)):\(String(format: "%02d", input % 60))"
+        return input.toHumanReadableTime()
     }
 
+}
+
+extension Int {
+    func toHumanReadableTime(reabableTime:String = "") -> String {
+        let dividend = self
+        let divisor  = 60
+        let newQuotient = dividend / divisor
+        let remainder = dividend % divisor
+        let newReabableTime = String(format: "%02d", remainder) + ":" +  reabableTime
+        
+        if 0 == newQuotient {
+            return String(newReabableTime.dropLast())
+        }
+        else {
+            return newQuotient.toHumanReadableTime(reabableTime: newReabableTime )
+        }
+    }
 }
 
