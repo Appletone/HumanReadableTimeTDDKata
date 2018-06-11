@@ -27,7 +27,7 @@ class HumanReadableTimeTDDKataTests: XCTestCase {
         let input = 359999
         
         // Act
-        let ret = vc.humanReadableTime(input: input)
+        let ret = vc.humanReadableTime(input)
         
         // Assert
         XCTAssertEqual("99:59:59", ret)
@@ -39,7 +39,7 @@ class HumanReadableTimeTDDKataTests: XCTestCase {
         let input = 86399
         
         // Act
-        let ret = vc.humanReadableTime(input: input)
+        let ret = vc.humanReadableTime(input)
         
         // Assert
         XCTAssertEqual("23:59:59", ret)
@@ -51,7 +51,7 @@ class HumanReadableTimeTDDKataTests: XCTestCase {
         let input = 61
         
         // Act
-        let ret = vc.humanReadableTime(input: input)
+        let ret = vc.humanReadableTime(input)
         
         // Assert
         XCTAssertEqual("01:01", ret)
@@ -63,7 +63,7 @@ class HumanReadableTimeTDDKataTests: XCTestCase {
         let input = 3
         
         // Act
-        let ret = vc.humanReadableTime(input: input)
+        let ret = vc.humanReadableTime(input)
         
         // Assert
         XCTAssertEqual("03", ret)
