@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/Appletone/HumanReadableTimeTDDKata.svg) ![JDD](https://img.shields.io/badge/JDD-Jed%20%E9%A9%85%E5%8B%95%E9%96%8B%E7%99%BC-red.svg)
+![Build Status](https://travis-ci.org/Appletone/HumanReadableTimeTDDKata.svg) [![codecov](https://codecov.io/gh/Appletone/HumanReadableTimeTDDKata/branch/master/graph/badge.svg)](https://codecov.io/gh/Appletone/HumanReadableTimeTDDKata) ![JDD](https://img.shields.io/badge/JDD-Jed%20%E9%A9%85%E5%8B%95%E9%96%8B%E7%99%BC-red.svg)
 
 ## Getting started
 
